@@ -1,26 +1,27 @@
 package com.example.mymemolist20;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
-public class MemoActivity extends AppCompatActivity {
+public class MemoListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_memo);
+        setContentView(R.layout.activity_memo_list);
 
-        initListButton();
+        initNewMemoButton();
         initSettingsButton();
     }
 
-    // Method that initializes the memo list image button
-    private void initListButton() {
-        ImageButton ibList = findViewById(R.id.imageButtonList);
-        ibList.setOnClickListener(v -> {
-            Intent intent = new Intent(MemoActivity.this, MemoListActivity.class);
+    //Method that initializes the memo activity image button
+    private void initNewMemoButton() {
+        ImageButton ibNewMemo = findViewById(R.id.imageButtonNew);
+        ibNewMemo.setOnClickListener(v -> {
+            Intent intent = new Intent(MemoListActivity.this, MemoActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         });
@@ -30,7 +31,7 @@ public class MemoActivity extends AppCompatActivity {
     private void initSettingsButton() {
         ImageButton ibSettings = findViewById(R.id.imageButtonSettings);
         ibSettings.setOnClickListener(v -> {
-            Intent intent = new Intent(MemoActivity.this, MemoSettings.class);
+            Intent intent = new Intent(MemoListActivity.this, MemoSettings.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         });

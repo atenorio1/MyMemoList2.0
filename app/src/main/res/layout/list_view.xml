@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textMemoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/textViewMemoTitle"
+        tools:ignore="RelativeOverlap">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/textMemoTitle"
+        android:text="@string/textViewPriority">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMemoTitle"
+        android:layout_toEndOf="@+id/textPriority"
+        android:layout_marginStart="5dp"
+        android:text="@string/textViewLevel">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textMemoPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPriority"
+        android:layout_marginStart="15dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:text="@string/textViewMemoPreview">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMemoPreview"
+        android:layout_marginStart="15dp"
+        android:text="@string/textViewCreated">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textCreated"
+        android:layout_below="@id/textMemoPreview"
+        android:layout_marginStart="5dp"
+        android:text="@string/textViewDateCreated">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textModified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textCreated"
+        android:layout_below="@id/textMemoPreview"
+        android:layout_marginStart="175dp"
+        android:text="@string/textViewModified">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textDateModified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textModified"
+        android:layout_below="@id/textMemoPreview"
+        android:layout_marginStart="5dp"
+        android:text="@string/textViewDateModified">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkboxDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+    </CheckBox>
+
+</RelativeLayout>

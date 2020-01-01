@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">My Memo List 2.0</string>
+    <string name="textViewTitle">Title:</string>
+    <string name="textViewImportance">Importance:</string>
+    <string name="radioButtonLow">Low</string>
+    <string name="radioButtonMedium">Medium</string>
+    <string name="radioButtonHigh">High</string>
+    <string name="buttonSave">Save</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonDeleteSelected">Delete Selected</string>
+    <string name="textViewMemoTitle">Memo Title</string>
+    <string name="textViewPriority">Priority:</string>
+    <string name="textViewLevel">Level</string>
+    <string name="textViewMemoPreview">Memo Preview</string>
+    <string name="textViewCreated">Created:</string>
+    <string name="textViewDateCreated">Date Created</string>
+    <string name="textViewModified">Modified:</string>
+    <string name="textViewDateModified">Date Modified</string>
+    <string name="textViewSortMemosBy">Sort Memos By</string>
+    <string name="radioButtonTitle">Title</string>
+    <string name="radioButtonDateModified">Date Modified</string>
+    <string name="radioButtonPriority">Priority</string>
+    <string name="radioButtonDateCreated">Date Created</string>
+    <string name="textViewOrderBy">Order By</string>
+    <string name="radioButtonAsc">Ascending</string>
+    <string name="radioButtonDesc">Descending</string>
+    <string name="rBOrderByLow">Low</string>
 </resources>

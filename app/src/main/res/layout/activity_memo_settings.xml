@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoSettings">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navbar"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textSortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:text="@string/textViewSortMemosBy">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroupSortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSortBy"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="45dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonTitle">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonDateCreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonDateCreated">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonDateModified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonDateModified">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonPriority">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textOrderBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupSortBy"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:text="@string/textViewOrderBy">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroupOrderBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textOrderBy"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="45dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonAsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonAsc">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonDesc">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rBOrderByLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rBOrderByLow"
+                    android:visibility="invisible"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/imageButtonList"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/list"
+            tools:ignore="ContentDescription">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButtonNew"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="90dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/newmemo"
+            tools:ignore="ContentDescription">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>
